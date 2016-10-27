@@ -1,0 +1,30 @@
+   
+    <div class="alert alert-danger fade in" ng-if="error">
+
+        
+        <strong>Aviso! </strong> {{error}}
+
+    </div>
+    <div class="alert alert-success fade in" ng-if="message">
+
+        
+        <strong>Aviso! </strong> {{message}}
+        
+    </div>
+<div ui-calendar="uiConfig.calendar" ng-model="calendarDate" calendar="myCalendar"></div>
+    
+<div class="container-fluid">
+  <div class="row">
+      
+        
+        <button type="button" class="btn btn-primary" ng-click="avancar()">Adicionar vaga</button>
+      
+      
+        
+        <button type="button" class="btn btn-primary" ng-click="imprimir()">Imprimir Lista</button>
+      
+   
+  </div>
+</div>
+
+    

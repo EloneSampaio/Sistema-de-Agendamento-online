@@ -1,0 +1,40 @@
+<div ng-controller="agendaController" >
+    <form class="form-horizontal"  ng-submit="salvar(data)" method="POST">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend> Informações do Agendamento </legend>
+
+  
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nome">Nome</label>  
+  <div class="col-md-4">
+  <input placeholder="Nome" class="form-control input-md" required="" type="text" ng-model="data.nome"/>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="data">Data de Nascimento</label>  
+  <div class="col-md-4">
+  <input  placeholder="" class="form-control input-md" type="text" ng-model="data.nascimento" mask='39/19/9999'/>
+    
+  </div>
+</div>
+  
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="prosseguir"></label>
+      <div class="col-md-4">
+        <button id="prosseguir" name="prosseguir" class="btn btn-primary" ng-click="salvar()">Prosseguir</button>
+      </div>
+    </div>
+
+    </fieldset>
+    </form>
+    </div>
+
+
+          
